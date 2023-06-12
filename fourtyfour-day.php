@@ -5,12 +5,9 @@
  * Description:     Provides a shortcode for deploying a 44 day calculator on to a page. Written for [faculty.engineering.asu.edu](https://faculty.engineering.asu.edu)
  * Author:          ASU Engineering
  * Author URI:      https://engineering.asu.edu
- * Version:         0.1
+ * Version:         1.0
  *
- * @package         starter_plugin
- * Text Domain:     (text)
- *
- * GitHub Plugin URI: https://github.com/asuengineering
+ * GitHub Plugin URI: https://github.com/asuengineering/pitchfork-44day-calculator
  *
  */
 

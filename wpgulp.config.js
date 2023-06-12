@@ -21,7 +21,7 @@ const injectChanges = true;
 
 // >>>>> Style options.
 // Path to main .scss file.
-const styleSRC = ['./sass/fourtyfourday.scss'];
+const styleSRC = ['./sass/fourtyfour-day.scss'];
 
 // Path to place the compiled CSS file. Default set to root folder.
 const styleDestination = './css/';

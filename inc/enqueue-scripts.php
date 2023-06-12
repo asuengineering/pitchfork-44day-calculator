@@ -10,13 +10,15 @@
 // Possible hooks: enqueue_block_assets (both), enqueue_block_editor_assets
 // Old school hooks: wp_enqueue_scripts, wp_enqueue_style
 
-add_action( 'enqueue_block_editor_assets', 'starter_plugin_enqueue_block_scripts' );
+add_action( 'enqueue_block_assets', 'starter_plugin_enqueue_block_scripts' );
 function starter_plugin_enqueue_block_scripts() {
 
-		$the_plugin     = get_plugin_data( plugin_dir_path( __DIR__ ) . 'pitchfork-plugin-template.php' );
+		$the_plugin     = get_plugin_data( plugin_dir_path( __DIR__ ) . 'fourtyfour-day.php' );
 		$the_version    = $the_plugin['Version'];
-		$plugin_version = $the_version . '.' . filemtime( plugin_dir_path( __DIR__ ) . 'js/block-variations.js' );
+		$style_version = $the_version . '.' . filemtime( plugin_dir_path( __DIR__ ) . 'css/fourtyfour-day.css' );
+		$js_version = $the_version . '.' . filemtime( plugin_dir_path( __DIR__ ) . 'js/fourtyfour-day.js' );
 
-	wp_enqueue_script( 'pf-plugin-template-block-variations', plugin_dir_url( __DIR__ ) . 'js/block-variations.js',  array( 'wp-blocks', 'wp-dom' ), $plugin_version , true );
+	wp_enqueue_style ( 'pf-fourtyfour-day', plugin_dir_url( __DIR__ ) . 'css/fourtyfour-day.css',  array(), $style_version);
+	wp_enqueue_script( 'pf-fourtyfour-day', plugin_dir_url( __DIR__ ) . 'js/fourtyfour-day.js',  array(), $js_version, true);
 
 }

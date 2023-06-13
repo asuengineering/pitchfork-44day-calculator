@@ -14,9 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (startDateInput) {
 			startDateInput.addEventListener('change', function () {
 				var startDate = new Date(startDateInput.value);
-				var future30Date = new Date(startDate.getTime() + (30 * 24 * 60 * 60 * 1000));
-				var future44Date = new Date(startDate.getTime() + (44 * 24 * 60 * 60 * 1000));
-				var future45Date = new Date(startDate.getTime() + (45 * 24 * 60 * 60 * 1000));
+
+				// Date calcs in JS are weird. TODO: Figure out why I had to add one extra day here.
+				var future30Date = new Date(startDate.getTime() + (31 * 24 * 60 * 60 * 1000));
+				var future44Date = new Date(startDate.getTime() + (45 * 24 * 60 * 60 * 1000));
+				var future45Date = new Date(startDate.getTime() + (46 * 24 * 60 * 60 * 1000));
 
 				var options = { year: 'numeric', month: 'long', day: 'numeric' };
 				var formatted30Date = future30Date.toLocaleDateString(undefined, options);

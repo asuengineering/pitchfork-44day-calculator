@@ -50,7 +50,6 @@ function pf_44daytracker_shortcode() {
 	$content .= '<dl class="calc-dates">';
 	$content .= '<dt>Day 30</dt><dd class="day-30">' . $thirty . '</dd>';
 	$content .= '<dt>Deadline to apply (Day 44)</dt><dd class="day-44">' . $deadline . '</dd>';
-	$content .= '<dt>Applications review date</dt><dd class="day-45">' . $review . '</dd>';
 	$content .= '</dl></div></form>';
 
 	return $content;

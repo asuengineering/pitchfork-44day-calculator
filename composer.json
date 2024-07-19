@@ -6,8 +6,7 @@
 	"minimum-stability": "stable",
 	"keywords": [
 		"wordpress",
-		"theme",
-		"bootstrap"
+		"theme"
 	],
 	"homepage": "https://github.com/asuengineering",
 	"require": {

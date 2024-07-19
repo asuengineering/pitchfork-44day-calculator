@@ -1,8 +1,3 @@
-/**
- * Event listener for the 44 day tracker shortcode.
- * - core/paragraph, add lead style.
- *
- */
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -17,20 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 				// Date calcs in JS are weird. TODO: Figure out why I had to add one extra day here.
 				var future30Date = new Date(startDate.getTime() + (31 * 24 * 60 * 60 * 1000));
-				var future44Date = new Date(startDate.getTime() + (45 * 24 * 60 * 60 * 1000));
 				var future45Date = new Date(startDate.getTime() + (46 * 24 * 60 * 60 * 1000));
 
-				var options = { year: 'numeric', month: 'long', day: 'numeric' };
+				var options = { year: 'numeric', month: '2-digit', day: '2-digit' };
 				var formatted30Date = future30Date.toLocaleDateString(undefined, options);
-				var formatted44Date = future44Date.toLocaleDateString(undefined, options);
 				var formatted45Date = future45Date.toLocaleDateString(undefined, options);
 
-				var dd30Element = calcDatesElement.querySelector('dd.day-30');
-				var dd44Element = calcDatesElement.querySelector('dd.day-44');
-				var dd45Element = calcDatesElement.querySelector('dd.day-45');
+				var dd30Element = calcDatesElement.querySelector('.calc-day.day-30');
+				var dd45Element = calcDatesElement.querySelector('.calc-day.day-45');
 
 				dd30Element.textContent = formatted30Date;
-				dd44Element.textContent = formatted44Date;
 				dd45Element.textContent = formatted45Date;
 			});
 		} else {

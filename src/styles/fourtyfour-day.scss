@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Plugin SASS
+#  - SASS variables from Unity BS5 library are available if needed.
+#  - Media query mixins resembling BS5 syntas also included.
+--------------------------------------------------------------*/
+
+// Import SASS variables from Unity Boostrap Theme
+@import "unity-bootstrap-theme/_custom-asu-variables";
+@import 'media-queries';
+
+#fourty-tracker {
+	max-width: 500px;
+
+	dl {
+		margin-top: 2rem;
+
+		dd.calc-day {
+			background-color: #FAFAFA;
+			padding: .5rem 1rem;
+			border: 1px solid #747474;
+		}
+	}
+
+	dd+dt {
+		margin-top: 2rem;
+	}
+
+	&.uds-form .form-group {
+		margin-bottom: 0;
+	}
+}

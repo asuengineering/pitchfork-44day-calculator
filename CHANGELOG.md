@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-### Version 1.3
+### Version 1.3.0
 
 - CHANGE: Add new language and labels for provided dates.
 - CHANGE: Change build process to Gulp WP instead of WP-Gulp (which is no longer supported).

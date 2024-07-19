@@ -1,7 +1,7 @@
 {
-  "name": "pitchfork-plugin-template",
-  "description": "An ASU Engineering plugin, designed for use with the Pitchfork theme.",
-  "version": "1.3",
+  "name": "pitchfork-44day-tracker",
+  "description": "Provides a shortcode for deploying an application deadline calculator to a page.",
+  "version": "1.3.0",
   "repository": "asuengineering/pitchfork-plugin-template",
   "license": "MIT",
   "dependencies": {

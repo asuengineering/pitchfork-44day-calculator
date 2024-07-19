@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+### Version 1.3
+
+- CHANGE: Add new language and labels for provided dates.
+- CHANGE: Change build process to Gulp WP instead of WP-Gulp (which is no longer supported).
+
 ### Version 1.2
 
 - CHANGE: Remove calculated value and label for +45 day event.
